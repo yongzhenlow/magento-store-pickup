@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<modules>
+		<YZ_StorePickup>
+			<version>0.0.1</version>
+		</YZ_StorePickup>
+	</modules>
+	<default>
+        <carriers>
+            <pickup>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>shipping/carrier_pickup</model>
+                <name>Store Pickup</name>
+                <title>Store Pickup</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </pickup>
+        </carriers>
+    </default>
+
+    <global>
+        <models>
+            <shipping>
+                <rewrite>
+                    <carrier_pickup>YZ_StorePickup_Model_Carrier_Pickup</carrier_pickup>
+                </rewrite>
+            </shipping>
+        </models>
+    </global>
+</config>
